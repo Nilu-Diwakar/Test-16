@@ -33,6 +33,10 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002187009830"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002187009830"))
 
+"""add time im seconds for waiting before delete 
+1min=60, 2min=60×2=120, 5min=60×5=300"""
+SECONDS = int(os.getenv("SECONDS", "60"))
+
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
